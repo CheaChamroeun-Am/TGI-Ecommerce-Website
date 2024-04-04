@@ -1,0 +1,23 @@
+<div class="container">
+  <a href="#" routerLink="/admin/sub-category/new" class="btn btn-success">Create New Post</a>
+
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Sub Category Name</th>
+          <th>Created Date</th>
+          <th width="250px">Action</th>
+        </tr>
+    </thead>
+      <tbody>
+        <tr *ngFor="let subcate of listSubCategory">
+          <td>{{ subcate.sub_category_name }}</td>
+          <td>{{ subcate.created_data }}</td>
+          <td>
+            <a (click)="onClickEdit( subcate.sub_category_id)" class="btn btn-primary">Edit</a>
+            <button type="button" (click)="deletePost(subcate.sub_category_id)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+</div>

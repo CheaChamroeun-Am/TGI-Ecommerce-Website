@@ -1,0 +1,24 @@
+<div class="container">
+  <a href="#" routerLink="/admin/category/new" class="btn btn-success">Create New Category</a>
+
+  <table class="table table-striped">
+    <thead>
+        <tr>
+
+          <th>Category Name</th>
+          <th>Created Date</th>
+          <th width="250px">Action</th>
+        </tr>
+    </thead>
+      <tbody>
+        <tr *ngFor="let cate of listCategory">
+          <td>{{ cate.category_name }}</td>
+          <td>{{ cate.created_date }}</td>
+          <td>
+            <a (click)="onClickEdit(cate.category_id)" class="btn btn-primary">Edit</a>
+            <button type="button" (click)="deletePost(cate.category_id)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div>

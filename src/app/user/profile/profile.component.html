@@ -1,0 +1,38 @@
+<div class="container profile-page">
+  <div class="d-flex">
+    <div class="profile">
+      <img src="" alt="">
+    </div>
+    <div class="info d-flex justify-content-between">
+      <div class="mx-5">
+        <h6 class="fw-bold mt-5">username : {{username}}</h6>
+        <h6 class="fw-bold mt-3">Phone number: 078220698</h6>
+      </div>
+      <div class="mt-5 nightmode">
+        <i class="fa-sharp fa-solid fa-circle-half-stroke fa-3x me-3"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <h4 class="mt-5 mb-4 fw-bold">My Item</h4>
+
+  <div class="d-flex mt-3-3 mt-5" *ngFor="let item of list">
+    <div class="product-img">
+      <img src="{{item.image_url}}" alt="">
+    </div>
+    <div class="product-info d-flex justify-content-between" >
+      <div class="mx-5">
+        <h6 class="mt-4">Product name:  {{item.product_name}}</h6>
+        <p class="mb-5" style="color: #FF4C29;">Price : {{item.product_price}}</p>
+        <p>Description : {{item.product_description}}</p>
+      </div>
+      <div class="mt-2">
+        <i class="fa-solid fa-pen me-3"></i>
+        <i class="fa-solid fa-trash me-3"></i>
+      </div>
+    </div>
+  </div>
+
+
+</div>

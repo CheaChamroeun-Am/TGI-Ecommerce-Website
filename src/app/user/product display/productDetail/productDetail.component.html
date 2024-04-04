@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="https://en.kepoper.com/wp-content/uploads/2020/10/Bae-Suzy-Pinterest.jpg" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <h4 class="fw-bold mt-2">Name : {{productItem.product_name}}</h4>
+        <hr>
+        <h4 class="fw-bold">Price : {{productItem.product_name}}</h4>
+        <h5 class="fw-bold mt-3">Product Details : </h5>
+        <p>{{productItem.product_description}}</p>
+        <div class="d-flex">
+          <i class="fa-solid fa-circle-check mt-1"></i>
+          <p class="ms-3">Brand : {{productItem.brand.brand_name}}</p>
+        </div>
+        <div class="d-flex">
+          <i class="fa-solid fa-circle-check mt-1"></i>
+          <p class="ms-3">Product condition : {{productItem.product_condition}}</p>
+        </div>
+        <div class="d-flex">
+          <i class="fa-solid fa-circle-check mt-1"></i>
+          <p class="ms-3">Contact number : {{productItem.contact_number}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

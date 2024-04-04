@@ -1,0 +1,27 @@
+ <!-- Product discount -->
+ <div class="container discount-product">
+  <h2 class="fw-bold">Discount Product</h2>
+
+
+  <div class="discount-products mt-5">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let p of listProducts">
+        <div class="card">
+          <img [src]="p.image_url" class="card-img-top" alt="...">
+          <div class="discount-percentage">
+            <h6 class="pt-2 text-white">10%</h6>
+          </div>
+          <div class="card-body">
+              <h6 class="card-title">{{p.product_name}}</h6>
+              <div class="d-flex">
+                  <h6 style="color:#FF4C29" class="text-decoration-line-through me-3">{{p.product_price}}$</h6>
+                  <h6 style="color:#FF4C29">15000$</h6>
+              </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+
+</div>
+
